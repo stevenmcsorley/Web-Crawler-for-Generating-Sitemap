@@ -10,7 +10,7 @@ now = datetime.datetime.now()
 lastmod = now.strftime("%Y-%m-%d")
 
 # Set the base URL of the website you want to crawl
-base_url = 'https://www.kynetik.a2hosted.com'
+base_url = 'https://www.wexample.com'
 
 # Set the user agent header to mimic a web browser
 headers = {
@@ -62,6 +62,9 @@ def build_sitemap(url, sitemap, visited):
     # Check if the path has already been visited
     if path in visited:
         return
+    
+     # Print the URL that is being crawled
+    print(url)
 
     # Add the URL to the sitemap and mark the path as visited
     sitemap.append(url)
