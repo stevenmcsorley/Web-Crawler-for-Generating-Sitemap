@@ -10,7 +10,7 @@ now = datetime.datetime.now()
 lastmod = now.strftime("%Y-%m-%d")
 
 # Set the base URL of the website you want to crawl
-base_url = 'https://www.wexample.com'
+base_url = 'https://www.example.com'
 
 # Set the user agent header to mimic a web browser
 headers = {
